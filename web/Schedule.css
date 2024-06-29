@@ -1,0 +1,31 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 27, 2024, 11:06:52 PM
+    Author     : SyazKhwarzm
+*/
+
+.hh{
+    border: 2px solid black;
+   margin: auto;
+   width: 50%;
+   padding: 20px;
+   margin-top: 10vh;
+}
+
+.hh input{
+    padding: 5%;
+    border-radius: 10px;
+
+}
+
+.hh #time{
+    padding: 5%;
+    border-radius: 10px;
+}
+.hh td{
+   padding-bottom: 7px;
+   padding-left: 5px;
+}
