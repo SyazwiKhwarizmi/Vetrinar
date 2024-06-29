@@ -1,0 +1,120 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 27, 2024, 6:02:06 PM
+    Author     : SyazKhwarzm
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+Elymaic&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+header{
+
+    grid-area: header;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;
+    background: #4D869C;
+    background-color: turquoise;
+    height: 10vh;
+    gap: 2px;
+}
+
+footer{
+
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: #4D869C;
+    height:10vh;
+    gap: 2px;
+}
+
+nav{
+    grid-area: sidebar;
+    background: #7AB2B2;
+    text-align: center;
+    border:2px solid black;
+}
+
+nav ul{
+
+    list-style-type: none;
+
+}
+nav li{
+
+    padding: 3vh;
+    border-bottom:  2px solid black;
+    border-radius: 15px;
+
+
+}
+
+nav li:hover{
+    background: #EEF7FF;
+}
+
+nav li a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    padding: 2vh;
+
+}
+
+
+
+main{
+    grid-area: main;
+    background: #CDE8E5;
+}
+
+body{
+    background: #CDE8E5;
+}
+
+
+.title{
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+
+.layout{
+    display: grid;
+    min-height: 97vh;
+    grid-template-rows:60px 40px auto 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas:'header ''sidebar' 'main' 'footer';
+
+}
+
+@media (min-width:480px){
+    .layout{
+        display: grid;
+        grid-template-rows:60px auto 60px;
+        grid-template-columns: 160px auto ;
+        grid-template-areas:'header header'
+                            'sidebar main '
+                            'footer footer';
+
+
+    }
+
+}
+
+
